@@ -20,7 +20,13 @@ public class Access implements Writable {
     private long down;
     private long sum;
 
-    public Access(){
+    public Access(){}
+
+    public Access(String phone, long up, long down){
+        this.phone = phone;
+        this.up = up;
+        this.down = down;
+        this.sum = up + down;
 
     }
 
